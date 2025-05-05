@@ -126,7 +126,7 @@ async function showDefinition(selectedText) {
           <p>Word not found</p>
           <p>Please try another word.</p>
         </div>
-        <button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;">Close</button>
+        <button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;"></button>
       `;
       
       setupCloseAndThemeToggle(popup);
@@ -170,6 +170,9 @@ async function showDefinition(selectedText) {
         <div style="font-weight: bold; margin: 10px 0 5px; color: #3498db;">Definitions</div>
       `;
       
+      // Remove the close button from the popup HTML
+      popup.innerHTML = html;
+      
       // Add definitions
       if (word.meanings && word.meanings.length > 0) {
         word.meanings.forEach((meaning, index) => {
@@ -209,7 +212,7 @@ async function showDefinition(selectedText) {
       }
       
       // Add close button
-      html += `<button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;">Close</button>`;
+      html += `<button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;"></button>`;
       
       popup.innerHTML = html;
       
@@ -249,7 +252,7 @@ async function showDefinition(selectedText) {
           <p>Invalid response format</p>
           <p>Please try another word.</p>
         </div>
-        <button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;">Close</button>
+        <button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;"></button>
       `;
       
       setupCloseAndThemeToggle(popup);
@@ -270,7 +273,7 @@ async function showDefinition(selectedText) {
         <p>Error fetching definition</p>
         <p>Please check your internet connection and try again.</p>
       </div>
-      <button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;">Close</button>
+      <button id="popup-close-btn" style="background: ${isDarkTheme ? "#2c3e50" : "#eee"}; color: ${isDarkTheme ? "#f0f0f0" : "#333"}; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 10px; float: right;"></button>
     `;
     
     setupCloseAndThemeToggle(popup);
@@ -309,7 +312,7 @@ function applyTheme(popup, isDarkTheme) {
 // Helper function to set up close button and theme toggle
 function setupCloseAndThemeToggle(popup) {
   // Add close button functionality
-  const closeBtn = document.getElementById("popup-close-btn");
+  const closeBtn = popup.querySelector("#popup-close-btn");
   if (closeBtn) {
     closeBtn.addEventListener("click", function() {
       popup.remove();
@@ -317,7 +320,7 @@ function setupCloseAndThemeToggle(popup) {
   }
   
   // Add theme toggle functionality
-  const themeToggle = document.getElementById("theme-toggle");
+  const themeToggle = popup.querySelector("#theme-toggle");
   if (themeToggle) {
     themeToggle.addEventListener("click", function() {
       // Check current theme

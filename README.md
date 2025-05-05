@@ -10,7 +10,7 @@ DefiniGo is a powerful and intuitive instant dictionary extension that provides 
 - 🚀 **Fast & Lightweight** – Optimized for seamless performance.
 
 ## Installation
-1. Download the latest version from the [GitHub Repository](#).
+1. Download the latest version from the [GitHub Repository](https://github.com/malathi-n79/DefiniGo).
 2. Extract the downloaded ZIP file to a folder on your computer.
 3. Open **Google Chrome** and navigate to `chrome://extensions/`.
 4. Enable **Developer mode** (toggle in the top-right corner).
@@ -29,6 +29,20 @@ DefiniGo is a powerful and intuitive instant dictionary extension that provides 
 - **HTML & CSS** – Responsive and user-friendly UI
 - **Dictionary API** – Fetching real-time word data
 
+## Screenshots
+### Using the DefiniGo Extension Icon
+1. **Screenshot 1**: Demonstrates entering a word in the input field to search for its meaning manually in light mode.
+2. **Screenshot 2**: Demonstrates entering a word in the input field to search for its meaning manually in dark mode.
+
+### Highlighting Words on a Webpage
+3. **Screenshot 3**: Displays the popup after highlighting a word on a webpage and right-clicking to select **DefiniGo: Define Word**  in light mode.
+4. **Screenshot 4**: Displays the popup after highlighting a word on a webpage and right-clicking to select **DefiniGo: Define Word**  in dark mode.
+
+![Screenshot 1](screenshots/image1.png)
+![Screenshot 2](screenshots/image2.png)
+![Screenshot 3](screenshots/image3.png)
+![Screenshot 4](screenshots/image4.png)
+
 ## Contributing
 We welcome contributions! If you’d like to improve DefiniGo:
 1. Fork the repository.
@@ -38,7 +52,7 @@ We welcome contributions! If you’d like to improve DefiniGo:
 5. Open a Pull Request.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 📧 Email: malathi3925@gmail.com  
