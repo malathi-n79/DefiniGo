@@ -2,6 +2,8 @@
 
 DefiniGo is a powerful and intuitive instant dictionary extension that provides quick word definitions, synonyms, and pronunciation on the go. Designed for efficiency, it helps users enhance their vocabulary with just a click.
 
+🌐 Website: 🔗✨ [Click to view the website demo ➡️🌍](https://defini-go.vercel.app/)
+
 ## Features
 - 📝 **Instant Definitions** – Get word meanings instantly.
 - 🔍 **Synonym & Antonym Suggestions** – Expand your vocabulary.
