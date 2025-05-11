@@ -56,6 +56,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 📧 Email: malathi3925@gmail.com  
-🌐 Website: [DefiniGo.com]((https://defini-go.vercel.app/))
+🌐 Website: [View Here](https://defini-go.vercel.app/)
 
 Happy Learning with DefiniGo! 🚀
